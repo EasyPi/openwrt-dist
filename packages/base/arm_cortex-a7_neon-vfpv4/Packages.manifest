@@ -1,0 +1,105 @@
+Package: ChinaDNS
+Version: 1.3.3-1
+Depends: libc
+Source: /home/rin/openwrt/dist/.package/chinadns
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 36263
+Filename: ChinaDNS_1.3.3-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 35934
+SHA256sum: e2bc8d7fc5c3d56986435d3f0ec012ef8156a0b5180b9651b59fb24d6b4e3593
+Description:  Protect yourself against DNS poisoning in China.
+
+Package: ShadowVPN
+Version: 0.2.0-1
+Depends: libc, kmod-tun, ip
+Source: /home/rin/openwrt/dist/.package/shadowvpn
+License: GPLv3
+LicenseFiles: COPYING
+Section: net
+Maintainer: clowwindy <clowwindy42@gmail.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 31602
+Filename: ShadowVPN_0.2.0-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 32324
+SHA256sum: b4922421a1783d44b6bf77bb32ab5bdc8db3e6d9faf9735c3a58d3071ce8dc0e
+Description:  A fast, safe VPN based on libsodium
+
+Package: dns-forwarder
+Version: 1.2.1-2
+Depends: libc
+Source: /home/rin/openwrt/dist/.package/dns-forwarder
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 8133
+Filename: dns-forwarder_1.2.1-2_arm_cortex-a7_neon-vfpv4.ipk
+Size: 8931
+SHA256sum: 08528503794889136ade0468b661ee7ec2bfd82e09c047acff050d0335fec4e8
+Description:  Forwarding DNS queries on TCP transport.
+
+Package: shadowsocks-libev-server
+Version: 3.3.5-1
+Depends: libc, libpthread
+Source: /home/rin/openwrt/dist/.package/shadowsocks-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 306317
+Filename: shadowsocks-libev-server_3.3.5-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 307067
+SHA256sum: ce07bb32389902d9ea02cd69a2e7282ad6f8dee9601c4e4b30302327c635f41b
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocks-libev
+Version: 3.3.5-1
+Depends: libc, libpthread
+Source: /home/rin/openwrt/dist/.package/shadowsocks-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 713302
+Filename: shadowsocks-libev_3.3.5-1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 713731
+SHA256sum: f1d5f332bb7349a8612b10ac5f04d9094cbf27c8de2cda26cbc836ec112ae6ef
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: simple-obfs-server
+Version: 0.0.5-4
+Depends: libc, libpthread
+Source: /home/rin/openwrt/dist/.package/simple-obfs
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 82901
+Filename: simple-obfs-server_0.0.5-4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 83726
+SHA256sum: e11d3040e0a10f296d58d8d1f472266ae82e0d1d2b7c3c0c1a2d44b75b3bf4ca
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
+Package: simple-obfs
+Version: 0.0.5-4
+Depends: libc, libpthread
+Source: /home/rin/openwrt/dist/.package/simple-obfs
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: arm_cortex-a7_neon-vfpv4
+Installed-Size: 80407
+Filename: simple-obfs_0.0.5-4_arm_cortex-a7_neon-vfpv4.ipk
+Size: 81280
+SHA256sum: 6e4a9d35a170414e909ddc18a242d07074b59889fb22fe9dcb61a64a71c2da84
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+

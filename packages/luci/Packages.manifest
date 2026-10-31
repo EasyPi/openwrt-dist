@@ -1,0 +1,75 @@
+Package: luci-app-chinadns
+Version: 1.6.3-1
+Depends: libc, ChinaDNS
+Source: /home/rin/openwrt/dist/.package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 1829
+Filename: luci-app-chinadns_1.6.3-1_all.ipk
+Size: 2723
+SHA256sum: f24fa1a82ebcc6269fc6221d8e3f5ae0eb180d5892eb60ad203539ca34933292
+Description:  LuCI Support for ChinaDNS.
+
+Package: luci-app-dns-forwarder
+Version: 1.6.3-1
+Depends: libc, dns-forwarder
+Source: /home/rin/openwrt/dist/.package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 1524
+Filename: luci-app-dns-forwarder_1.6.3-1_all.ipk
+Size: 2426
+SHA256sum: 066766b222b8f63121fc4c076d466df721057724ad774297f014df2109b8a788
+Description:  LuCI Support for Dns-Forwarder.
+
+Package: luci-app-shadowsocks-without-ipset
+Version: 2.1.1-1
+Depends: iptables, wget, resolveip, libc
+Source: /home/rin/openwrt/dist/.package/luci-app-shadowsocks
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 14082
+Filename: luci-app-shadowsocks-without-ipset_2.1.1-1_all.ipk
+Size: 15019
+SHA256sum: 98faa4ae951d061aa3e1b0e6ad59df2c1e1f62df68825f85dfd6ccb6be629b90
+Description:  LuCI Support for shadowsocks-libev.
+
+Package: luci-app-shadowsocks
+Version: 2.1.1-1
+Depends: iptables, wget, resolveip, ipset, libc
+Source: /home/rin/openwrt/dist/.package/luci-app-shadowsocks
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 14168
+Filename: luci-app-shadowsocks_2.1.1-1_all.ipk
+Size: 15103
+SHA256sum: 9094ecf08329af8c677f550718aa2eed1490c781b336c867a9671096256e64f9
+Description:  LuCI Support for shadowsocks-libev.
+
+Package: luci-app-shadowvpn
+Version: 1.6.3-1
+Depends: libc, ShadowVPN
+Source: /home/rin/openwrt/dist/.package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 1987
+Filename: luci-app-shadowvpn_1.6.3-1_all.ipk
+Size: 2882
+SHA256sum: 51e8ca45736cd7f2315500b7611903caa450bda7bb969eac0fd6f862a8e8dfc7
+Description:  LuCI Support for ShadowVPN.
+

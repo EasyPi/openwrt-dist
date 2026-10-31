@@ -1,0 +1,105 @@
+Package: ChinaDNS
+Version: 1.3.3-1
+Depends: libc
+Source: /home/rin/openwrt/dist/.package/chinadns
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: x86_64
+Installed-Size: 36261
+Filename: ChinaDNS_1.3.3-1_x86_64.ipk
+Size: 35853
+SHA256sum: b49d5e944a84c7bf39df3ffb1b56966f23deb6fef79dbc6d8b8b7b8d4f2f24b5
+Description:  Protect yourself against DNS poisoning in China.
+
+Package: ShadowVPN
+Version: 0.2.0-1
+Depends: libc, kmod-tun, ip
+Source: /home/rin/openwrt/dist/.package/shadowvpn
+License: GPLv3
+LicenseFiles: COPYING
+Section: net
+Maintainer: clowwindy <clowwindy42@gmail.com>
+Architecture: x86_64
+Installed-Size: 31895
+Filename: ShadowVPN_0.2.0-1_x86_64.ipk
+Size: 32713
+SHA256sum: 546d4641d186889fa8ed4a1d51c36dac2f8f8b568ebb26c5145f18c1ae5691cf
+Description:  A fast, safe VPN based on libsodium
+
+Package: dns-forwarder
+Version: 1.2.1-2
+Depends: libc
+Source: /home/rin/openwrt/dist/.package/dns-forwarder
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: x86_64
+Installed-Size: 10571
+Filename: dns-forwarder_1.2.1-2_x86_64.ipk
+Size: 11354
+SHA256sum: 6811d4df7ea74932cc72221c95ae5a3a20292c34083f9e6c366f524fca5e83e4
+Description:  Forwarding DNS queries on TCP transport.
+
+Package: shadowsocks-libev-server
+Version: 3.3.5-1
+Depends: libc, libpthread
+Source: /home/rin/openwrt/dist/.package/shadowsocks-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: x86_64
+Installed-Size: 350868
+Filename: shadowsocks-libev-server_3.3.5-1_x86_64.ipk
+Size: 351681
+SHA256sum: be02131c1dd799bf7808b62cb94078298c728707fe55740d427fbef8b7f326ed
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocks-libev
+Version: 3.3.5-1
+Depends: libc, libpthread
+Source: /home/rin/openwrt/dist/.package/shadowsocks-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: x86_64
+Installed-Size: 836806
+Filename: shadowsocks-libev_3.3.5-1_x86_64.ipk
+Size: 837595
+SHA256sum: 6d21e3f6f3b4be0cda1a3926417a8513d4d4ff4e6b45c3b846800a71e261e4f7
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: simple-obfs-server
+Version: 0.0.5-4
+Depends: libc, libpthread
+Source: /home/rin/openwrt/dist/.package/simple-obfs
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: x86_64
+Installed-Size: 86309
+Filename: simple-obfs-server_0.0.5-4_x86_64.ipk
+Size: 87090
+SHA256sum: 177db52441da1ca9d322995fd9f3191f36506f7034afa9be74571d3a18f80e9b
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
+Package: simple-obfs
+Version: 0.0.5-4
+Depends: libc, libpthread
+Source: /home/rin/openwrt/dist/.package/simple-obfs
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: x86_64
+Installed-Size: 83822
+Filename: simple-obfs_0.0.5-4_x86_64.ipk
+Size: 84673
+SHA256sum: 7672bf647cdf3d599972fd2e023733e957b586749beee1c6eb4a38c70b81d3b6
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
