@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc " />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>OpenWrt-dist by EasyPi</title>
+  <title>Untitled</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -251,26 +251,19 @@
 <h1 id="openwrt-dist">OpenWrt-dist</h1>
 <p>Provides some OpenWrt/LEDE packages</p>
 <p>OpenWrt-dist is a depot of OpenWrt/LEDE device.</p>
-<p>For more details, <a
-href="https://sourceforge.net/projects/openwrt-dist/">check
-here</a>.</p>
+<p>For more details, <a href="https://sourceforge.net/projects/openwrt-dist/">check here</a>.</p>
 <h2 id="install">Install</h2>
 <h3 id="form-sources">Form Sources</h3>
 <p>First, add openwrt-dist.pub file into opkg’s keys:</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://easypi.github.io/openwrt-dist/openwrt-dist.pub</span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://easypi.github.io/openwrt-dist/openwrt-dist.pub</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">opkg-key</span> add openwrt-dist.pub</span></code></pre></div>
 <p>You can use the following command to get architecture:</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">opkg</span> print-architecture <span class="kw">|</span> <span class="fu">awk</span> <span class="st">&#39;{print $2}&#39;</span></span></code></pre></div>
-<p>Then, add the following line to
-<code>/etc/opkg/customfeeds.conf</code></p>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">src/gz</span> openwrt_dist https://easypi.github.io/openwrt-dist/packages/base/{architecture}</span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">opkg</span> print-architecture <span class="kw">|</span> <span class="fu">awk</span> <span class="st">&#39;{print $2}&#39;</span></span></code></pre></div>
+<p>Then, add the following line to <code>/etc/opkg/customfeeds.conf</code></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">src/gz</span> openwrt_dist https://easypi.github.io/openwrt-dist/packages/base/{architecture}</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">src/gz</span> openwrt_dist_luci https://easypi.github.io/openwrt-dist/packages/luci</span></code></pre></div>
 <p>Then</p>
-<div class="sourceCode" id="cb4"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">opkg</span> update</span>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">opkg</span> update</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">opkg</span> install ChinaDNS</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">opkg</span> install luci-app-chinadns</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ex">opkg</span> install dns-forwarder</span>
@@ -283,40 +276,24 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="
 <p>You can also search and install them in LuCI.</p>
 <h3 id="use-script">Use script</h3>
 <p>Use the following command and follow the prompts.</p>
-<div class="sourceCode" id="cb5"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://openwrt-dist.sourceforge.net/auto_install.sh</span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://openwrt-dist.sourceforge.net/auto_install.sh</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> +x auto_install.sh</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">./auto_install.sh</span></span></code></pre></div>
 <h3 id="form-files">Form Files</h3>
-<p>Use <code>SCP</code> or <code>FTP</code> upload these downloaded
-files to your router, then log in your router and use <code>opkg</code>
-to install these <code>.ipk</code> file.</p>
+<p>Use <code>SCP</code> or <code>FTP</code> upload these downloaded files to your router, then log in your router and use <code>opkg</code> to install these <code>.ipk</code> file.</p>
 <p>Compile</p>
 <p>The depot is composed of the following repository on GitHub.</p>
 <ul>
-<li><a href="https://github.com/aa65535/openwrt-chinadns">ChinaDNS for
-OpenWrt</a></li>
-<li><a
-href="https://github.com/aa65535/openwrt-dns-forwarder">DNS-Forwarder
-for OpenWrt</a></li>
-<li><a href="https://github.com/aa65535/openwrt-redsocks2">RedSocks2 for
-OpenWrt</a></li>
-<li><a href="https://github.com/aa65535/openwrt-shadowvpn">ShadowVPN for
-OpenWrt</a></li>
-<li><a href="https://github.com/aa65535/openwrt-dist-luci">LuCI
-Applications of OpenWrt-dist</a></li>
-<li><a
-href="https://github.com/shadowsocks/openwrt-shadowsocks">Shadowsocks-libev
-for OpenWrt</a></li>
-<li><a
-href="https://github.com/shadowsocks/luci-app-shadowsocks">OpenWrt LuCI
-for Shadowsocks-libev</a></li>
+<li><a href="https://github.com/aa65535/openwrt-chinadns">ChinaDNS for OpenWrt</a></li>
+<li><a href="https://github.com/aa65535/openwrt-dns-forwarder">DNS-Forwarder for OpenWrt</a></li>
+<li><a href="https://github.com/aa65535/openwrt-redsocks2">RedSocks2 for OpenWrt</a></li>
+<li><a href="https://github.com/aa65535/openwrt-shadowvpn">ShadowVPN for OpenWrt</a></li>
+<li><a href="https://github.com/aa65535/openwrt-dist-luci">LuCI Applications of OpenWrt-dist</a></li>
+<li><a href="https://github.com/shadowsocks/openwrt-shadowsocks">Shadowsocks-libev for OpenWrt</a></li>
+<li><a href="https://github.com/shadowsocks/luci-app-shadowsocks">OpenWrt LuCI for Shadowsocks-libev</a></li>
 </ul>
-<p>Use the <a
-href="http://wiki.openwrt.org/doc/howto/obtain.firmware.sdk">SDK</a> to
-build (take openwrt-dist-luci for example): cd into SDK root, then</p>
-<div class="sourceCode" id="cb6"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pushd</span> package</span>
+<p>Use the <a href="http://wiki.openwrt.org/doc/howto/obtain.firmware.sdk">SDK</a> to build (take openwrt-dist-luci for example): cd into SDK root, then</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pushd</span> package</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/aa65535/openwrt-dist-luci.git</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">popd</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">make</span> menuconfig <span class="co"># select LuCI / 3. Applications</span></span>
@@ -325,8 +302,7 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="
 <p>GPLv3</p>
 <h2 id="bugs-and-support">Bugs and Support</h2>
 <ul>
-<li><a href="https://groups.google.com/d/forum/openwrt-dist">Google
-Groups</a></li>
+<li><a href="https://groups.google.com/d/forum/openwrt-dist">Google Groups</a></li>
 </ul>
 </body>
 </html>
